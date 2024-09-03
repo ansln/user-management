@@ -42,7 +42,7 @@ loginRouter.post('/', cookieVerify, (req, res) => {
         if (result == '') {
             res.json('user tidak ada');
         } else {
-            res.cookie('LOGSESS_SISWA', randomCookies, {
+            res.cookie('logsess_siswa', randomCookies, {
                 httpOnly: true,
                 sameSite: 'None',
                 secure: true

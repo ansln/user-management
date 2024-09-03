@@ -15,13 +15,14 @@ const authRouter = express.Router();
 
 authRouter.get('/', (req, res) => {
     const userCookie = req.cookies;
-
-    console.log(userCookie);
+    const { logsess_siswa } = req.cookies;
     
-    if (!userCookie) {
+    if (userCookie.length >= 1 || logsess_siswa) {
+        res.json({ user_auth_isLoggedIn: true });
+    } else if (userCookie.length <= 0 || !logsess_siswa) {
         res.json({ user_auth_isLoggedIn: false });    
-    } else {
-        res.json({ user_auth_isLoggedIn: true }); 
+    }else{
+        res.json({ user_auth_isLoggedIn: false, msg: 'something error' }); 
     }
 }); 
 
