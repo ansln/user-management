@@ -12,7 +12,6 @@ A simple User Management CRUD App built using a tech stack with **React** for th
 
 ## Features
 
-- Login with **Google** and with JWT Auth
 - Add new user
 - Show all user / show by user id
 - Update user
@@ -35,7 +34,7 @@ A simple User Management CRUD App built using a tech stack with **React** for th
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `id`      | `string` | **Required**. Id of user to fetch |
 
 
 ## Authors
