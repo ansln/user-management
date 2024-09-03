@@ -23,13 +23,13 @@ A simple User Management CRUD App built using a tech stack with **React** for th
 
 #### Get all user
 
-```http
+```
   GET /siswa
 ```
 
 #### Get siswa with specific id
 
-```http
+```
   GET /siswa/${id}
 ```
 
