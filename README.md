@@ -12,6 +12,7 @@ A simple User Management CRUD App built using a tech stack with **React** for th
 
 ## Features
 
+- Login page
 - Add new user
 - Show all user / show by user id
 - Update user
