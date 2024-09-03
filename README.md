@@ -1,8 +1,43 @@
-# React + Vite
+# User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple User Management CRUD App built using a tech stack with **React** for the Frontend and using **Express** for the Backend.
+## Tech Stack
 
-Currently, two official plugins are available:
+**Frontend:** React, Vite, TailwindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Backend:** Node, Express
+
+**Database:** MySQL
+
+
+## Features
+
+- Login with **Google** and with JWT Auth
+- Add new user
+- Show all user / show by user id
+- Update user
+- Delete user
+
+
+## API Reference
+
+#### Get all user
+
+```http
+  GET /siswa
+```
+
+#### Get siswa with specific id
+
+```http
+  GET /siswa/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+
+## Authors
+
+- Created by [@ansln](https://www.github.com/ansln) with ❤
